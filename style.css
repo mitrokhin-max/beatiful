@@ -23,13 +23,13 @@ body {
   display: inline-block;
   margin: 20px;
   padding: 0 10px;
+  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
   color: #fff;
   background-color: #f64a8a;
-
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 35px;
   line-height: 0;
 }
 
@@ -63,7 +63,7 @@ nav a:focus {
   height: 500px;
   background-image: url("img/women.svg");
   background-repeat: no-repeat;
-  background-position-x: 70%;
+  background-position-x: 80%;
   background-position-y: 40%;
   background-size: 20%;
 }
@@ -111,4 +111,77 @@ font-weight: 300;
 blockquote cite {
 font-style: normal;
 text-transform: uppercase;
+}
+
+.text {
+  margin: 0 20%;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
+}
+
+.spiski {
+  margin: 100px 0; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: stretch;
+}
+
+.zg {
+  width: auto;
+}
+
+.spiski div h3 {
+  line-height: 20px;
+  color: #000;
+  font-size: 35px;
+  text-shadow: 1px 1px white, 2px 2px black, 3px 3px black;
+}
+
+.rounded {
+width: auto;
+counter-reset: li;
+list-style: none;
+font: 20px 'Lato', sans-serif;
+font-weight: 500;
+padding: 0;
+display: inline-block;
+margin: auto;
+}
+.rounded a {
+position: relative;
+display: block;
+padding: .4em .4em .4em 2em;
+margin: .5em 0;
+background: rgba(255, 151, 187, 0.5);
+color: #000;
+text-decoration: none;
+border-radius: .3em;
+transition: .3s ease-out;
+}
+.rounded a:hover {background: rgba(192, 192, 192, 0.3);}
+.rounded a:hover:before {transform: rotate(360deg);}
+.rounded a:before {
+content: counter(li);
+counter-increment: li;
+position: absolute;
+left: -1.3em;
+top: 50%;
+margin-top: -1.3em;
+background: #f64a8a;
+height: 2em;
+width: 2em;
+line-height: 2em;
+border: .3em solid white;
+text-align: center;
+font-weight: bold;
+border-radius: 2em;
+transition: all .3s ease-out;
+}
+
+.page-footer {
+  padding: 40px 0;
+  text-align: center;
+  font: 20px "Old Standard TT", "Times", "Times New Roman", serif;
 }
